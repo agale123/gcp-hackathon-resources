@@ -4,8 +4,7 @@ The goal of this app is to demonstrate a simple HTML page, served by App Engine.
 
 ## Local Development
 Stand up a local python server by running:
-cd www
-python -m SimpleHTTPServer 8000
+`cd www && python -m http.server 8000`
 
 ## Cloud Function
 The source code for the cloud function that performs the translation is in the function/ directory. The cloud function makes a call to the Translate API.
