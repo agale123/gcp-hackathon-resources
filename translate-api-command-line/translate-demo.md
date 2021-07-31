@@ -10,6 +10,10 @@
 
 `export GOOGLE_APPLICATION_CREDENTIALS="key.json"`
 
+For WSL, the path would be:
+
+`export GOOGLE_APPLICATION_CREDENTIALS="/home/username/key.json"`
+
 5. Run translate request
 
 `curl -s -X POST -H "Content-Type: application/json"     -H "Authorization: Bearer "$(gcloud auth application-default print-access-token)     --data "{
