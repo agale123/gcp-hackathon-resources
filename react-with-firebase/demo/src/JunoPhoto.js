@@ -1,10 +1,13 @@
 import React from 'react';
 import 'firebase/storage';
 import * as firebase from 'firebase/app';
-import {firebaseConfig} from './firebase.js';
 
 // Initialize Firebase
 // firebaseConfig is the object with apiKey, authDomain, etc
+// TODO: replace with your apps firebaseConfig
+let firebaseConfig = {
+};
+
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage().ref();
 
